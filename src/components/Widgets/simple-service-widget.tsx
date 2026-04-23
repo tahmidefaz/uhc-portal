@@ -6,7 +6,7 @@ import { Icon } from '@patternfly/react-core/dist/dynamic/components/Icon';
 import ArrowRightIcon from '@patternfly/react-icons/dist/esm/icons/arrow-right-icon';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 
-import { Link } from '~/common/routing';
+import { Link } from '~/common/routing/Link';
 
 interface SimpleServiceWidgetProps {
   id: number;

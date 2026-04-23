@@ -1,6 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
-import webpack from 'webpack';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -66,12 +65,6 @@ const config: StorybookConfig = {
         }),
       ];
     }
-    config.plugins = [
-      ...(config.plugins ?? []),
-      new webpack.DefinePlugin({
-        APP_DEV_SERVER: JSON.stringify(false),
-      }),
-    ];
     return config;
   },
   core: {
